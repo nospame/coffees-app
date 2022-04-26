@@ -1,0 +1,8 @@
+<h1>All the Coffees</h1>
+
+<% @coffees.each do |coffee| %>
+  <h2><%= coffee.name %></h2>
+  <p>Country of origin: <%= coffee.origin %></p>
+  <p>Roast level: <%= coffee.roast %></p>
+  <p>Price: $<%= coffee.price %></p>
+<% end %>
