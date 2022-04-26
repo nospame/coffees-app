@@ -1,0 +1,10 @@
+<h1>Add a New Coffee</h1>
+<form action="/coffees" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p><label for="name">Name: </label><input type="text" name="name"></p>
+  <p><label for="origin">Origin: </label><input type="text" name="origin"></p>
+  <p><label for="price">Price: </label><input type="text" name="price"></p>
+  <p><label for="roast">Roast level: </label><input type="text" name="roast"></p>
+  <p><label for="image">Image URL: </label><input type="text" name="image"></p>
+  <input type="submit" value="Add Coffee">
+</form>
