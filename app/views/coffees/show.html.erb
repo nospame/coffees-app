@@ -1,0 +1,10 @@
+<h1>One of the Coffees</h1>
+
+<div id="coffee-<%= @coffee.id %>">
+  <h2><%= @coffee.name %></h2>
+  <img src="<%= @coffee.image %>" style="width: 800px">
+  <p>Origin: <%= @coffee.origin %></p>
+  <p>Roast level: <%= @coffee.roast %></p>
+  <p>Price: $<%= @coffee.price %></p>
+</div>
+<a href="/coffees">Back to All Coffees</a>
